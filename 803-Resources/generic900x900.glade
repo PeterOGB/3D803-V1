@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="mainWindow">
+    <property name="can_focus">False</property>
+    <property name="events">GDK_POINTER_MOTION_MASK | GDK_STRUCTURE_MASK | GDK_VISIBILITY_NOTIFY_MASK | GDK_SUBSTRUCTURE_MASK</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkEventBox" id="eventBox">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="has_focus">True</property>
+            <property name="is_focus">True</property>
+            <property name="can_default">True</property>
+            <property name="has_default">True</property>
+            <property name="events">GDK_POINTER_MOTION_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK | GDK_KEY_PRESS_MASK | GDK_KEY_RELEASE_MASK | GDK_ENTER_NOTIFY_MASK | GDK_STRUCTURE_MASK</property>
+            <signal name="button-press-event" handler="on_eventBox_button_press_event" swapped="no"/>
+            <signal name="button-release-event" handler="on_eventBox_button_release_event" swapped="no"/>
+            <signal name="draw" handler="on_eventBox_draw" swapped="no"/>
+            <signal name="enter-notify-event" handler="on_eventBox_enter_notify_event" swapped="no"/>
+            <signal name="key-press-event" handler="on_eventBox_key_press_event" swapped="no"/>
+            <signal name="key-release-event" handler="on_eventBox_key_release_event" swapped="no"/>
+            <signal name="motion-notify-event" handler="on_eventBox_motion_notify_event" swapped="no"/>
+            <signal name="realize" handler="on_eventBox_realize" swapped="no"/>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButtonBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="layout_style">start</property>
+            <child>
+              <object class="GtkButton" id="quitButton">
+                <property name="label">gtk-quit</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_stock">True</property>
+                <signal name="clicked" handler="on_quitButton_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="MainsOnButton">
+                <property name="label" translatable="yes">Mains
+ON</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_MainsOnButton_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="MainsOffButton">
+                <property name="label" translatable="yes">Mains
+OFF</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_MainsOffButton_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="ResetViewButton">
+                <property name="label" translatable="yes">Reset
+View</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_ResetViewButton_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="splashWindow">
+    <property name="can_focus">False</property>
+    <property name="resizable">False</property>
+    <property name="deletable">False</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkImage" id="splashImage">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="stock">gtk-missing-image</property>
+      </object>
+    </child>
+  </object>
+</interface>
