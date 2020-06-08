@@ -1028,7 +1028,7 @@ gboolean GtkRun(int w,int h)
 
     gtk_widget_show(splashWindow);
     
-    g_timeout_add(100,splashOff,NULL);
+    g_timeout_add(5000,splashOff,NULL);
     
     gtk_main ();
     
